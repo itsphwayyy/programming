@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    margin: 0;
+    padding: 20px;
+    color: #334155;
+}
+
+/* 1. Main Navigation Bar Container */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;                     /* Space between link buttons */
+    padding: 10px 16px;
+    background-color: #ffffff;     /* White container background */
+    border-radius: 50px;           /* Pill shape for container */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    margin: 20px auto;             /* Centered horizontally */
+}
+
+/* 2. Base Link Styling (Crucial for button look!) */
+.nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;            /* Adds space INSIDE each link */
+    border-radius: 25px;           /* Makes each link a pill button */
+    color: #475569;                /* Dark gray text by default */
+   
+}
+
+/* 3. Normal / Unvisited Links */
+.nav a:link, 
+.nav a:visited {
+    color: #475569;
+}
+
+/* 4. Hover State (When mouse moves over link) */
+.nav a:hover {
+    background-color: #ec4899;    /* Vibrant Pink */
+    color: #ffffff !important;      /* White text on hover */
+}
+
+/* 5. Active Page State */
+.nav a:active, 
+.nav a.active {
+    background-color: #2563eb;    /* Deep Blue for active page */
+    color: #ffffff !important;      /* White text */
+}
+
+/* Table layout with clean dividing lines */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse; /* Merges borders into clean single lines */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Add proper lines/borders to all header and data cells */
+table th, 
+table td {
+    border: 1px solid #cbd5e1; /* Clean slate-gray border lines */
+    padding: 12px 16px;        /* Spacing inside cells */
+    text-align: left;
+}
+
+/* Header styling applied to all th tags */
+table th {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+/* Light hover effect on table rows */
+table tr:hover {
+    background-color: #f8fafc;
+}

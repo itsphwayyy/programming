@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Page with Social Icons</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FontAwesome Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .nav a:link{
+            color: cadetblue;
+        }
+
+        .nav a:visited{
+            color: darkblue;
+        }
+
+        .nav a:hover{
+            color: deeppink;
+        }
+
+        .nav a:active, .nav a.active{
+            color: cornflowerblue;
+        }
+
+        p{
+            padding: 20px 0; /* Reduced padding from 250px so layout looks clean */
+        }
+
+        /* 🚀 SOCIAL MEDIA ICONS STYLING */
+        .social-container {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 40px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #f1f5f9;
+            color: #334155;
+            text-decoration: none;
+            font-size: 20px;
+           
+        }
+
+        /* Hover animations and brand colors */
+        .social-icons a:hover {
+            color: #ffffff;
+          
+        }
+
+        .social-icons a.facebook:hover { background-color: #1877f2; }
+        .social-icons a.twitter:hover { background-color: #1da1f2; }
+        .social-icons a.instagram:hover { background-color: #e4405f; }
+        .social-icons a.github:hover { background-color: #333333; }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <a href="hw1.html"> PYTHON </a>
+        <a href="hw2.html"> C </a>
+        <a href="hw3.html"> HTML</a>
+        <a href="hw4.html" class="active">Bookmark</a>
+    </nav>
+
+    <ul>
+        <li><a href="#Python">PYTHON</a></li>
+        <li><a href="#Cp">C programming</a></li>
+        <li><a href="#HTML">HTML</a></li>
+    </ul>
+
+    <div>
+        <h2 id="Python">Python</h2>
+        <p>Python is a high-level, interpreted programming language celebrated worldwide for its elegant, human-readable syntax and immense flexibility. Designed by Guido van Rossum and first released in 1991, Python was built on the core philosophy that code readability directly drives developer efficiency, allowing engineers to express complex computational logic in far fewer lines than compiled languages like C or Java. Its vast ecosystem—often described as having "batteries included"—ranges from a rich standard library to hundreds of thousands of open-source packages available via PyPI, empowering developers to seamlessly transition between web development with Django and FastAPI, task automation, network scripting, and scientific computing. In recent years, Python has solidified its position as the undisputed industry standard for Data Science, Artificial Intelligence, and Machine Learning, serving as the foundational language behind dominant frameworks such as PyTorch, TensorFlow, and Pandas. Whether executing quick single-line automation scripts or orchestrating enterprise-scale distributed applications, Python provides an accessible entry point for absolute beginners while maintaining the computational depth and architectural power required by top software architects across the globe.</p>
+    </div>
+
+    <div>
+        <h2 id="Cp">C</h2>
+        <p>C is a foundational, low-level programming language that serves as the bedrock of modern computing and system architecture. Developed by Dennis Ritchie at Bell Labs in 1972 to implement the Unix operating system, C was engineered to offer direct, unrestricted access to hardware memory while maintaining a compact and portable syntax. Unlike modern interpreted languages, C compiles straight into native machine code, producing blazingly fast executables with minimal runtime overhead and an extremely small memory footprint. It gives developers explicit control over computer hardware through direct pointer arithmetic and manual dynamic memory allocation (malloc and free), making it the premier language for resource-constrained environments like microcontrollers and real-time systems. Because of its raw performance and stability, C underpins almost all major technology today—its code powers operating system kernels (including Linux, Windows, and macOS), relational database engines like MySQL and PostgreSQL, high-performance game engines, and even the core runtimes and virtual machines of other popular languages, including Python's standard CPython interpreter.</p>
+    </div>
+
+    <div>
+        <h2 id="HTML">HTML</h2>
+        <p>HTML (HyperText Markup Language) is the universally recognized backbone of the World Wide Web, serving as the foundational markup language that structures every web page across the internet. Created by Tim Berners-Lee in 1991, HTML uses a standardized system of tags and elements—such as headings, paragraphs, images, forms, and division containers —to organize raw content into a cohesive, hierarchical document structure known as the Document Object Model (DOM). Unlike programming languages like Python or C that execute complex algorithmic logic and manage computational memory, HTML is a declarative markup language whose primary responsibility is providing semantic meaning and spatial layout for web content. When a web browser requests a page, it reads the HTML source code, parses the structural tree, applies visual styling rules provided by Cascading Style Sheets (CSS), and executes interactive behaviors powered by JavaScript. Through the modern HTML5 standard, the language offers rich multimedia capabilities, native support for video and audio playback, interactive canvas graphics, and responsive structural tags that ensure web pages remain accessible, search-engine friendly, and readable across smartphones, tablets, and desktop displays worldwide.</p>
+    </div>
+
+    <!-- 🚀 CONNECT WITH US / SOCIAL MEDIA SECTION -->
+    <div class="social-container">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="github">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
